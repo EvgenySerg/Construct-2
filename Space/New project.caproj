@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>zso6to0mdi8z</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="earth" sid="400904604787784">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="159185328038170">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176786334544765" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500736" original-source="C:\Users\Администратор\Downloads\57286345f14a415475c3c964.png">
+                        <collision-poly>
+                            <point x="0.147321" y="0.145803" />
+                            <point x="0.5" y="0" />
+                            <point x="0.852679" y="0.145803" />
+                            <point x="1" y="0.499264" />
+                            <point x="0.852679" y="0.854197" />
+                            <point x="0.5" y="1" />
+                            <point x="0.147321" y="0.854197" />
+                            <point x="0" y="0.499264" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="space" sid="211926248532479">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="647445014636790" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Администратор\Downloads\Texture-Space.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="264363629522550">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="531020168042716" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Администратор\Downloads\earth.gif">
+                        <collision-poly>
+                            <point x="0.144" y="0.144" />
+                            <point x="0.5" y="0.004" />
+                            <point x="0.852" y="0.148" />
+                            <point x="0.992" y="0.5" />
+                            <point x="0.852" y="0.852" />
+                            <point x="0.5" y="0.996" />
+                            <point x="0.144" y="0.856" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moon" sid="867955019541528">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="964255426750271" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Администратор\Downloads\Moon.png">
+                        <collision-poly>
+                            <point x="0.1475" y="0.1475" />
+                            <point x="0.5" y="0" />
+                            <point x="0.8525" y="0.1475" />
+                            <point x="1" y="0.5" />
+                            <point x="0.8525" y="0.8525" />
+                            <point x="0.5" y="1" />
+                            <point x="0.1475" y="0.8525" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="504054420522380">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Rocket" sid="521015270512533">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="142156888103667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Администратор\Downloads\rockets_PNG13265.png">
+                        <collision-poly>
+                            <point x="0.391304" y="0.227414" />
+                            <point x="0.5" y="0.00155763" />
+                            <point x="0.594203" y="0.23053" />
+                            <point x="0.623188" y="0.5" />
+                            <point x="0.826087" y="0.819315" />
+                            <point x="0.5" y="0.998442" />
+                            <point x="0.173913" y="0.819315" />
+                            <point x="0.369565" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="866380620841563">
+            <plugin id="Keyboard" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

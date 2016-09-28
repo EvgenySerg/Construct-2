@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="g" sid="925396183085805" static="0" type="number">9.8</variable>
+        <variable constant="0" name="RocketMass" sid="452043097949248" static="0" type="number">0</variable>
+        <variable constant="0" name="ugol" sid="201048215292912" static="0" type="number">0</variable>
+        <variable constant="0" name="R" sid="715211031262320" static="0" type="number">200</variable>
+        <variable constant="0" name="posY" sid="288173572061810" static="0" type="number">0</variable>
+        <variable constant="0" name="posX" sid="765880600615629" static="0" type="number">0</variable>
+        <event-block sid="671753007738619">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="705156348346735" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="286532346429065" type="System">
+                    <param id="0" name="Variable">posX</param>
+                    <param id="1" name="Value">earth.X</param>
+                </action>
+                <action id="-9" name="Set value" sid="999275286703447" type="System">
+                    <param id="0" name="Variable">posY</param>
+                    <param id="1" name="Value">earth.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="815363301681048">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="756602669462657" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="216293356008090" type="System">
+                    <param id="0" name="Variable">ugol</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-1" name="Set X" sid="819463348894719" type="moon">
+                    <param id="0" name="X">posX+R*cos(ugol) </param>
+                </action>
+                <action id="-2" name="Set Y" sid="906193404699821" type="moon">
+                    <param id="0" name="Y">posY+R*sin(ugol)</param>
+                </action>
+                <action id="0" name="Set text" sid="313185257278606" type="Text">
+                    <param id="0" name="Text">posX+R*cos(ugol) </param>
+                </action>
+                <action id="-21" name="Rotate toward position" sid="421319088461411" type="moon">
+                    <param id="0" name="Degrees">ugol</param>
+                    <param id="1" name="X">posX</param>
+                    <param id="2" name="Y">posY</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="187981687390285">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="402722900613693" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" sid="471646786065989" title="Rocket">
+            <sub-events>
+                <variable constant="0" name="Speed" sid="923845867528780" static="0" type="number">0</variable>
+                <variable constant="0" name="Mass" sid="728264066533545" static="0" type="number">500</variable>
+                <variable constant="0" name="Accel" sid="858104325615443" static="0" type="number">0</variable>
+            </sub-events>
+        </event-group>
+        <event-block sid="471926592655369">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="321639736370620" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+    </events>
+</c2eventsheet>
